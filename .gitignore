@@ -3,11 +3,19 @@ node_modules/
 
 # Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Logs
 logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Workspace directories
 workspaces/
@@ -20,15 +28,73 @@ pids
 
 # Test coverage
 coverage/
+*.lcov
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
 
 # OS-specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 workspaces
 
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# Package manager files
+.npm
+.eslintcache
+.stylelintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Electron specific
+dist-electron/
+
+# Cloudflare Workers
+.wrangler/
+wrangler.toml.bak
+
+# Claude settings
 **/.claude/settings.local.json
 
+# Secret files
 .env.secret-agents
 
 # Edge config
 .edge-config.json
+
+# Playground files
+playground.ts
+
+# Test artifacts
+test-results/
+playwright-report/
+test-results.xml
+
+# Local development
+.local/
